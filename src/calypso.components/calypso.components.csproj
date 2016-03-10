@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE928BE9-74F1-4308-9E27-868E0F6CF7C4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>calypso.components</RootNamespace>
+    <AssemblyName>calypso.components</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
+    <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
+    <TypeScritModuleResolution>Classic</TypeScritModuleResolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gulpfile.js" />
+    <Content Include="packages.config" />
+    <Content Include="package.json" />
+    <Content Include="wwwroot\footer\footer.component.css">
+      <DependentUpon>footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\footer\footer.component.html">
+      <DependentUpon>footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\header\header.component.css">
+      <DependentUpon>header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\header\header.component.html">
+      <DependentUpon>header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\legal\legal.component.css">
+      <DependentUpon>legal.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\legal\legal.component.html">
+      <DependentUpon>legal.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\links-list\links-list.component.css">
+      <DependentUpon>links-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\links-list\links-list.component.html">
+      <DependentUpon>links-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\logo\logo.component.css">
+      <DependentUpon>logo.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\logo\logo.component.html">
+      <DependentUpon>logo.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\navigation\navigation.component.css">
+      <DependentUpon>navigation.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\navigation\navigation.component.html">
+      <DependentUpon>navigation.component.ts</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />
+    <TypeScriptCompile Include="typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="typings\requirejs\require.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="wwwroot\core\action-creator.ts" />
+    <TypeScriptCompile Include="wwwroot\core\add-or-update.ts" />
+    <TypeScriptCompile Include="wwwroot\core\component-decorators.ts" />
+    <TypeScriptCompile Include="wwwroot\core\component-extension.ts" />
+    <TypeScriptCompile Include="wwwroot\core\fetch.ts" />
+    <TypeScriptCompile Include="wwwroot\core\form-encode.ts" />
+    <TypeScriptCompile Include="wwwroot\core\index.ts" />
+    <TypeScriptCompile Include="wwwroot\core\invoke-async.ts" />
+    <TypeScriptCompile Include="wwwroot\core\local-storage-manager-provider.ts" />
+    <TypeScriptCompile Include="wwwroot\core\pluck-out.ts" />
+    <TypeScriptCompile Include="wwwroot\core\service.ts" />
+    <TypeScriptCompile Include="wwwroot\core\store.ts" />
+    <TypeScriptCompile Include="wwwroot\footer\footer.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\footer\footer.component.ts" />
+    <TypeScriptCompile Include="wwwroot\footer\footer.module.ts" />
+    <TypeScriptCompile Include="wwwroot\footer\footer.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\footer\footer.service.ts" />
+    <TypeScriptCompile Include="wwwroot\header\header.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\header\header.component.ts" />
+    <TypeScriptCompile Include="wwwroot\header\header.module.ts" />
+    <TypeScriptCompile Include="wwwroot\header\header.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\header\header.service.ts" />
+    <TypeScriptCompile Include="wwwroot\legal\legal.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\legal\legal.component.ts" />
+    <TypeScriptCompile Include="wwwroot\legal\legal.module.ts" />
+    <TypeScriptCompile Include="wwwroot\legal\legal.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\legal\legal.service.ts" />
+    <TypeScriptCompile Include="wwwroot\links-list\links-list.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\links-list\links-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\links-list\links-list.module.ts" />
+    <TypeScriptCompile Include="wwwroot\links-list\links-list.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\links-list\links-list.service.ts" />
+    <TypeScriptCompile Include="wwwroot\logo\logo.component.ts" />
+    <TypeScriptCompile Include="wwwroot\logo\logo.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\logo\logo.module.ts" />
+    <TypeScriptCompile Include="wwwroot\logo\logo.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\logo\logo.service.ts" />
+    <TypeScriptCompile Include="wwwroot\navigation\navigation.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\navigation\navigation.component.ts" />
+    <TypeScriptCompile Include="wwwroot\navigation\navigation.module.ts" />
+    <TypeScriptCompile Include="wwwroot\navigation\navigation.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\navigation\navigation.service.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="demos\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61868</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61868/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
