@@ -72,7 +72,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="demos\core\calypso-core.js" />
+    <Content Include="demos\core\index.html" />
+    <Content Include="dist\calypso-core.js" />
     <Content Include="gulpfile.js" />
+    <Content Include="libs\angular-route.js" />
+    <Content Include="libs\angular.js" />
+    <Content Include="libs\jquery.js" />
+    <Content Include="libs\rx.all.compat.min.js" />
+    <Content Include="node_modules\jquery\dist\jquery.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="wwwroot\footer\footer.component.css">
@@ -111,6 +119,7 @@
     <Content Include="wwwroot\navigation\navigation.component.html">
       <DependentUpon>navigation.component.ts</DependentUpon>
     </Content>
+    <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,14 +142,21 @@
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="wwwroot\core\action-creator.ts" />
     <TypeScriptCompile Include="wwwroot\core\add-or-update.ts" />
+    <TypeScriptCompile Include="wwwroot\core\api-endpoint-provider.ts" />
+    <TypeScriptCompile Include="wwwroot\core\auth-interceptor.ts" />
     <TypeScriptCompile Include="wwwroot\core\component-decorators.ts" />
     <TypeScriptCompile Include="wwwroot\core\component-extension.ts" />
+    <TypeScriptCompile Include="wwwroot\core\core.module.ts" />
     <TypeScriptCompile Include="wwwroot\core\fetch.ts" />
     <TypeScriptCompile Include="wwwroot\core\form-encode.ts" />
     <TypeScriptCompile Include="wwwroot\core\index.ts" />
     <TypeScriptCompile Include="wwwroot\core\invoke-async.ts" />
     <TypeScriptCompile Include="wwwroot\core\local-storage-manager-provider.ts" />
+    <TypeScriptCompile Include="wwwroot\core\login-redirect-provider.ts" />
     <TypeScriptCompile Include="wwwroot\core\pluck-out.ts" />
+    <TypeScriptCompile Include="wwwroot\core\route-when-extension.ts" />
+    <TypeScriptCompile Include="wwwroot\core\route-resolver.ts" />
+    <TypeScriptCompile Include="wwwroot\core\safe-digest.ts" />
     <TypeScriptCompile Include="wwwroot\core\service.ts" />
     <TypeScriptCompile Include="wwwroot\core\store.ts" />
     <TypeScriptCompile Include="wwwroot\footer\footer.actions.ts" />
@@ -178,7 +194,9 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="demos\" />
+    <Folder Include="demos\footer\" />
+    <Folder Include="demos\header\" />
+    <Folder Include="demos\page\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

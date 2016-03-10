@@ -57,3 +57,5 @@
     $get = () => this;
 
 }
+
+angular.module("localStorageManager", []).provider("localStorageManager", LocalStorageManagerProvider);
