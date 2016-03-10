@@ -58,8 +58,8 @@ gulp.task('template-cache', function () {
 
 gulp.task('watch', function () {
     gulp.watch([
-        './src/**/*.ts', './src/**/*.html', './src/**/*.css'
+        './wwwroot/**/*.ts', './wwwroot/**/*.html', './wwwroot/**/*.css'
     ], ['template-cache', 'calypso-components-css', 'calypso-components-webpack']);
 });
 
-gulp.task('default', ['calypso-components-css', 'calypso-components-webpack', 'template-cache', 'watch']);
+gulp.task('default', ['calypso-components-css', 'calypso-core-webpack', 'template-cache', 'watch']);

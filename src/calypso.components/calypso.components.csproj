@@ -120,6 +120,24 @@
       <DependentUpon>navigation.component.ts</DependentUpon>
     </Content>
     <Content Include="tsconfig.json" />
+    <Content Include="wwwroot\photo-gallery\photo-gallery-editor.component.css" />
+    <Content Include="wwwroot\photo-gallery\photo-gallery-editor.component.html" />
+    <Content Include="wwwroot\photo-gallery\photo-gallery-list.component.css" />
+    <Content Include="wwwroot\photo-gallery\photo-gallery-list.component.html" />
+    <Content Include="wwwroot\photo-gallery\photo-gallery.component.css" />
+    <Content Include="wwwroot\photo-gallery\photo-gallery.component.html" />
+    <Content Include="wwwroot\tabs\tab-conent.component.html">
+      <DependentUpon>tab-content.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\tabs\tab-title-component.html">
+      <DependentUpon>tab-title.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\tabs\tabs.component.css">
+      <DependentUpon>tabs.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\tabs\tabs.component.html">
+      <DependentUpon>tabs.component.ts</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -132,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="wwwroot\tabs\tab-title.component.css" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />
@@ -189,6 +208,20 @@
     <TypeScriptCompile Include="wwwroot\navigation\navigation.module.ts" />
     <TypeScriptCompile Include="wwwroot\navigation\navigation.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\navigation\navigation.service.ts" />
+    <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.component.ts" />
+    <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.module.ts" />
+    <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.service.ts" />
+    <TypeScriptCompile Include="wwwroot\tabs\tab-content.component.ts" />
+    <TypeScriptCompile Include="wwwroot\tabs\tab-title.component.ts" />
+    <TypeScriptCompile Include="wwwroot\tabs\tabs.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\tabs\tabs.component.ts" />
+    <TypeScriptCompile Include="wwwroot\tabs\tabs.module.ts" />
+    <TypeScriptCompile Include="wwwroot\tabs\tabs.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\tabs\tabs.service.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
