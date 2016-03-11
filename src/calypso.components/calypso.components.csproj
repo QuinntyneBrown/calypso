@@ -125,6 +125,8 @@
     <Content Include="wwwroot\photo-gallery\photo-gallery-list.component.html" />
     <Content Include="wwwroot\photo-gallery\photo-gallery.component.css" />
     <Content Include="wwwroot\photo-gallery\photo-gallery.component.html" />
+    <Content Include="wwwroot\product-page\product-page.component.css" />
+    <Content Include="wwwroot\product-page\product-page.component.html" />
     <Content Include="wwwroot\provider-picker\provider-picker-editor.component.css" />
     <Content Include="wwwroot\provider-picker\provider-picker-editor.component.html" />
     <Content Include="wwwroot\provider-picker\provider-picker-list.component.css" />
@@ -229,6 +231,11 @@
     <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.module.ts" />
     <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\photo-gallery\photo-gallery.service.ts" />
+    <TypeScriptCompile Include="wwwroot\product-page\product-page.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\product-page\product-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\product-page\product-page.module.ts" />
+    <TypeScriptCompile Include="wwwroot\product-page\product-page.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\product-page\product-page.service.ts" />
     <TypeScriptCompile Include="wwwroot\provider-picker\provider-picker-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\provider-picker\provider-picker-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\provider-picker\provider-picker.actions.ts" />
