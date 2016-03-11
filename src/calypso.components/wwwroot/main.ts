@@ -3,12 +3,17 @@ require("./header/header.module");
 require("./footer/footer.module");
 require("./side-nav/side-nav.module");
 
+require("./home-page/home-page.module");
+require("./product-page/product-page.module");
 
 var app: any = angular.module("calypso", [
     "app.core",
     "app.header",
     "app.footer",
-    "app.sideNav"
+    "app.sideNav",
+
+    "app.homePage",
+    "app.productPage",
 ]);
 
 

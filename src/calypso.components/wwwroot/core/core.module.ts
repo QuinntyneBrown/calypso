@@ -1,7 +1,5 @@
 ﻿/// <reference path="../../typings/tsd.d.ts" />
 
-require("../../libs/angular");
-require("../../libs/angular-route");
 require("../../libs/jquery");
 require("../../libs/rx.all.compat.min")
 
@@ -26,7 +24,7 @@ var app = (<any>angular.module("app.core", [
     "formEncode",
     "invokeAsync",
     "localStorageManager",
-    "loginRedirect",
+    //"loginRedirect",
     "routeResolver",
     "routeWhenExtension",
     "safeDigest",

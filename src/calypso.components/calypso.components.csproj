@@ -92,6 +92,8 @@
     </Content>
     <Content Include="wwwroot\header\header.component.css" />
     <Content Include="wwwroot\header\header.component.html" />
+    <Content Include="wwwroot\home-page\home-page.component.css" />
+    <Content Include="wwwroot\home-page\home-page.component.html" />
     <Content Include="wwwroot\legal\legal.component.css">
       <DependentUpon>legal.component.ts</DependentUpon>
     </Content>
@@ -194,6 +196,11 @@
     <TypeScriptCompile Include="wwwroot\header\header.module.ts" />
     <TypeScriptCompile Include="wwwroot\header\header.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\header\header.service.ts" />
+    <TypeScriptCompile Include="wwwroot\home-page\home-page.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\home-page\home-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\home-page\home-page.module.ts" />
+    <TypeScriptCompile Include="wwwroot\home-page\home-page.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\home-page\home-page.service.ts" />
     <TypeScriptCompile Include="wwwroot\legal\legal.actions.ts" />
     <TypeScriptCompile Include="wwwroot\legal\legal.component.ts" />
     <TypeScriptCompile Include="wwwroot\legal\legal.module.ts" />

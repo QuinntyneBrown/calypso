@@ -39,7 +39,6 @@ class ContactComponent { }
 
 
 var app: any = angular.module("app", [
-    "ngRoute",
     "calypso"
 ]); 
 
@@ -52,8 +51,8 @@ app.component(ContactComponent);
 app.config(["$routeProvider", ($routeProvider) => {
 
     $routeProvider
-        .when("/", { template: "<h1>???</h1>" })
-        .when("/product", { template: "<product></product>" })
+        .when("/", { template: "<home-page></home-page>" })
+        .when("/product", { template: "<product-page></product-page>" })
         .when("/about", { template: "<about></about>" })
         .when("/contact", { template: "<contact></contact>" })
         .otherwise("/");
