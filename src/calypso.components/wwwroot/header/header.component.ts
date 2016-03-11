@@ -8,5 +8,5 @@ import { HeaderActionCreator } from "./header.actions";
 })
 export class HeaderComponent {
     constructor(private headerActionCreator: HeaderActionCreator) { }
-  
+
 }

@@ -81,7 +81,7 @@ export class Dispatcher<T> extends Rx.Subject<T> implements IDispatcher {
 }
 
 angular.module("store", [])
-    .service("store", ["dispatcher", "initialState", "reducers", Store])
+    .service("store", ["dispatcher", "initialState", "localStorageManager", "reducers", Store])
     .service("dispatcher", [Dispatcher])
     .provider("reducers", ReducersProvider)
     .provider("initialState", InitialStateProvider)

@@ -32,5 +32,3 @@ var app = (<any>angular.module("app.core", [
     "safeDigest",
     "store",   
 ]));
-
-app.run([() => alert("works")]);
