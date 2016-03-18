@@ -5,16 +5,25 @@ import { FlipCardActionCreator } from "./flip-card.actions";
 
 @Component({
     templateUrl: "wwwroot/flip-card/flip-card.component.html",
-	styleUrls: ["wwwroot/flip-card/flip-card.component.css"],
+    styleUrls: ["wwwroot/flip-card/flip-card.component.css"],
+    transclude: {
+        'front': '?flipCardFront',
+        'back': '?flipCardBack'
+    },
     selector: "flip-card",
-    providers: ["$element"]
+    providers: ["$attrs","$element"]
 })
 export class FlipCardComponent {
-    constructor(private $element: angular.IAugmentedJQuery) { }
+    constructor(private $attrs: angular.IAttributes, private $element: angular.IAugmentedJQuery) { }
   
-    ngOnit = () => {
+    ngOnInit = () => {
         this.$element[0].addEventListener("ontouchstart", () => {
             this.$element[0].classList.toggle('hover');
-        })
+        })       
     }
+
+    ngOnChildInit = () => {
+        alert("child");
+    }
+
 }

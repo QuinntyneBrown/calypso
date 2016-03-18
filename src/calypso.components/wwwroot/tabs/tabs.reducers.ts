@@ -2,7 +2,7 @@ import { SetCurrentTabAction, TabChildLoadedAction } from "./tabs.actions";
 import { addOrUpdate, pluckOut } from "../core";
 
 export const setCurrentTabReducer = (state, action) => {
-    if (action instanceof SetCurrentTabAction) {
+    if (action instanceof SetCurrentTabAction) {        
         state.tabIndex[action.tabName] = action.index;
         state.lastTriggeredByAction = SetCurrentTabAction;
     }

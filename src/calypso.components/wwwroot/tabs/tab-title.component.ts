@@ -4,6 +4,7 @@ import { TabsActionCreator } from "./tabs.actions";
 @Component({
     templateUrl: "wwwroot/tabs/tab-title.component.html",
     selector: "tab-title",
+    transclude: true,
     providers: ["$attrs","tabsActionCreator"]
 })
 export class TabTitleComponent {

@@ -4,7 +4,8 @@ import { TabsActionCreator } from "./tabs.actions";
 @Component({
     templateUrl: "wwwroot/tabs/tab-content.component.html",
     selector: "tab-content",
-    providers: ["tabActionCreator"]
+    transclude: true,
+    providers: ["tabsActionCreator"]
 })
 export class TabContentComponent {
     constructor(private tabsActionCreator: TabsActionCreator) { }
