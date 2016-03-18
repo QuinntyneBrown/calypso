@@ -73,7 +73,6 @@
     <Content Include="demos\basic\index.html" />
     <Content Include="demos\basic\product.html" />
     <Content Include="dist\calypso-core.js" />
-    <Content Include="dist\calypso-footer.js" />
     <Content Include="dist\calypso.js" />
     <Content Include="dist\calypso.templates.js" />
     <Content Include="gulpfile.js" />
@@ -84,6 +83,8 @@
     <Content Include="node_modules\jquery\dist\jquery.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="wwwroot\flip-card\flip-card.component.css" />
+    <Content Include="wwwroot\flip-card\flip-card.component.html" />
     <Content Include="wwwroot\footer\footer.component.css">
       <DependentUpon>footer.component.ts</DependentUpon>
     </Content>
@@ -188,6 +189,10 @@
     <TypeScriptCompile Include="wwwroot\core\safe-digest.ts" />
     <TypeScriptCompile Include="wwwroot\core\service.ts" />
     <TypeScriptCompile Include="wwwroot\core\store.ts" />
+    <TypeScriptCompile Include="wwwroot\flip-card\flip-card.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\flip-card\flip-card.component.ts" />
+    <TypeScriptCompile Include="wwwroot\flip-card\flip-card.module.ts" />
+    <TypeScriptCompile Include="wwwroot\flip-card\flip-card.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\footer\footer.actions.ts" />
     <TypeScriptCompile Include="wwwroot\footer\footer.component.ts" />
     <TypeScriptCompile Include="wwwroot\footer\footer.module.ts" />

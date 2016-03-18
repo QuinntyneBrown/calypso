@@ -2,6 +2,7 @@
 require("./header/header.module");
 require("./footer/footer.module");
 require("./side-nav/side-nav.module");
+require("./flip-card/flip-card.module");
 
 require("./home-page/home-page.module");
 require("./product-page/product-page.module");
@@ -11,7 +12,7 @@ var app: any = angular.module("calypso", [
     "app.header",
     "app.footer",
     "app.sideNav",
-
+    "app.flipCard",
     "app.homePage",
     "app.productPage",
 ]);

@@ -24,7 +24,7 @@ var app = (<any>angular.module("app.core", [
     "formEncode",
     "invokeAsync",
     "localStorageManager",
-    //"loginRedirect",
+    "loginRedirect",
     "routeResolver",
     "routeWhenExtension",
     "safeDigest",
